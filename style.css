@@ -1,7 +1,7 @@
 /* Variables */
 :root {
 	--purple: #6a0dad;
-	--pink: #e84393;
+	--pink: #e11584;
 }
 
 * {
@@ -50,6 +50,7 @@ footer {
 	color: white;
 	padding: 1rem 3rem;
 	cursor: pointer;
+	text-shadow: none;
 }
 
 .btn:hover {
@@ -74,26 +75,32 @@ header {
 	/* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
 }
 
+header .logo,
+header .logo span {
+	font-family: "Playfair Display SC", serif;
+	text-shadow: 1px 1px 5px rgb(214, 214, 214);
+}
+
 header .logo {
 	font-size: 2.5rem;
-	color: var(--purple);
 	font-weight: lighter;
+	color: rgb(0, 0, 0);
 }
 
 header .logo span {
-	color: var(--pink);
 	font-weight: bold;
+	color: rgb(0, 0, 0);
 }
 
 header .navbar a {
 	font-size: 2rem;
 	padding: 0 1.5rem;
-	color: #666;
+	color: rgb(0, 0, 0);
 }
 
 header .navbar a:hover {
 	font-weight: bold;
-	color: red;
+	text-shadow: 1px 1px 5px rgb(170, 170, 170);
 }
 
 header .icons a {
@@ -126,7 +133,7 @@ header .fa-bars {
 	display: flex;
 	align-items: center;
 	min-height: 100vh;
-	background: url(images/home-bg.jpg) no-repeat;
+	background: url(images/rod.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 }
@@ -135,11 +142,17 @@ header .fa-bars {
 	max-width: 50%;
 }
 
+.home .content h3,
+.home .content span,
+.home .content p {
+	text-shadow: 1px 1px 5px rgb(235, 235, 235);
+}
+
 .home .content h3 {
 	font-family: "Playfair Display SC", serif;
 	font-size: 5.5rem;
 	white-space: nowrap;
-	color: #333;
+	color: rgb(36, 36, 36);
 	font-weight: bold;
 }
 
@@ -152,7 +165,7 @@ header .fa-bars {
 
 .home .content p {
 	font-size: 1.5rem;
-	color: #333;
+	color: rgb(0, 0, 0);
 	padding: 1rem 0;
 	line-height: 1.5;
 }
@@ -459,7 +472,7 @@ header .fa-bars {
 	}
 
 	.home {
-		background-position: 60% 50%;
+		background-position: center;
 	}
 
 	/* icons */
@@ -534,7 +547,7 @@ header .fa-bars {
 
 	/* home */
 	.home {
-		background-position: 70% 50%;
+		background-position: 30% 50%;
 	}
 
 	.home .content h3 {
